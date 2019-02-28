@@ -1,0 +1,37 @@
+<프로젝트명 : 미정>
+
+목적 : 범용적인 기존의 라이브러리보다는 게임 서버 제작에 좀 더 접근하고, 범용적이지 않지만 
+       비슷하게 자주 쓰는 그런 코드, 특수하게 최적화된 코드들을 모아두는 것이 목적이다.
+       
+라이센스 : 무조건 프리. 특별히 제약 없으며 코드를 잘라가서 맘대로 써도 무방하다. 가능하다면 제작자의 주석을 
+           유지했으면 하지만, 각 사용자가 코드의 관리를 위해서 수정해도 뭐라 하지는 않는다.
+
+설명 : static lib로 제작될 것이며, 버젼 관리의 귀찮음 때문에 DLL로 제작하지는 않을 것이다.
+       윈도우 버젼을 중심으로 빠르게 코드를 안정화시키고 이후 다른 OS용을 wrapper class를 사용해서든 별도로 코드를 작성하든 확장할 것이다.
+       각 ns별 담당자 이외에 ns코드를 직접 수정하지 말고 담당자에게 메일 혹은 카페 게시판을 통해서 수정 및 추가를 요청할 것!
+	   ns의 추가는 담당자 설정, sourceforge 계정 추가등의 문제가 있으므로 프로젝트 담당자에게 메일 바람.
+
+주의 사항 : 프로젝트는 UNICODE가 기본으로 제작됩니다. 
+            L"" 대신 _T(""), wchar_t 대신 TCHAR를 사용해주세요.
+
+프로젝트 주최 : cafe.naver.com/ongameserver (오픈된 카페가 아니라서 아무나 가입은 불가능하다. 온라인 게임 서버 개발자들의 카페임)
+
+프로젝트 담당자 : 이지현 (whitewitch@logickorea.co.kr / ljh6341@gmail.com)
+
+ns별 담당자     : 공용 코드 -> 이지현 (whitewitch@logickorea.co.kr / ljh6341@gmail.com)
+				  nsTime    -> 이지현 (whitewitch@logickorea.co.kr / ljh6341@gmail.com)
+				  nsStream  -> 이욱진 (minjin00@gmail.com / minjin00@naver.com)
+				  nsContainer::nsUniqueKeyContainer (대분류 아래 소분류 작업일 경우)
+							-> 이지현 (whitewitch@logickorea.co.kr / ljh6341@gmail.com)
+				  
+빌드 담당자 : VS 2005 -> 
+              VS 2008 -> 이지현 (whitewitch@logickorea.co.kr / ljh6341@gmail.com)
+              VS 2010 -> 
+
+영문화 담당자 : 
+
+프로젝트 세팅 :  사용 툴 - VS 2008 (주소)
+                 코드 공유 툴 - SVN (주소) , VisualSVN (주소)
+                 단위 테스트 툴 - UNITTEST (주소) -> 프로젝트 속성에 추가하지 말아주세요. VSI환경 "도구 -> 옵션 -> 프로젝트 관련 설정"에 넣어 주세요.!! 필수.. 주의.. 조심.. 안하면 뭄..
+                                  빌드 시 파일명을 "UnitTest++.1..lib" 이렇게 명명해 주세요. 현재 1.4로 되어 있으니 같이 맞춰 주세요.
+                                  버젼의 변경이 필요할 경우 프로젝트 담당자에게 요청 부탁드립니다.

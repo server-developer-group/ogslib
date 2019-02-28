@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="nsString">
+      <UniqueIdentifier>{e1f096b3-432b-420d-9e4e-b8308592f412}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="define">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="nsUnicode">
+      <UniqueIdentifier>{0091b104-77f4-4b2b-9728-e09f1be4b07b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nsTime">
+      <UniqueIdentifier>{1468e833-73e5-452c-81a3-cff3f72dd7b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nsFile">
+      <UniqueIdentifier>{006841b1-e52a-4b14-afe2-732d3c7e05d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nsContainer">
+      <UniqueIdentifier>{c5f6e7cc-e769-4f0c-bf30-11bd16aee1cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nsContainer\nsUniqueKeyContainer">
+      <UniqueIdentifier>{c0a70f31-9af6-4aa3-bc0a-3050fbd8a7f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nsMath">
+      <UniqueIdentifier>{cf6e4094-07f1-4eda-9a61-bd2af94a8302}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nsStream">
+      <UniqueIdentifier>{6912e3c2-14f6-425d-8783-589412a30639}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nsStream\Buffer">
+      <UniqueIdentifier>{675df857-707e-4e57-88c5-0b9026ceaf65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nsStream\Encoder">
+      <UniqueIdentifier>{23f6be75-b6c3-47b0-a948-f1bdcd63e747}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="common.cpp">
+      <Filter>define</Filter>
+    </ClCompile>
+    <ClCompile Include="nsStream_Buffer.cpp">
+      <Filter>nsStream\Buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="nsStream_Encoder_XOR.cpp">
+      <Filter>nsStream\Encoder</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="common.h">
+      <Filter>define</Filter>
+    </ClInclude>
+    <ClInclude Include="nsTime.h">
+      <Filter>nsTime</Filter>
+    </ClInclude>
+    <ClInclude Include="nsUniqueKeyContainer.h">
+      <Filter>nsContainer\nsUniqueKeyContainer</Filter>
+    </ClInclude>
+    <ClInclude Include="nsStream.h">
+      <Filter>nsStream</Filter>
+    </ClInclude>
+    <ClInclude Include="nsStream_Buffer.h">
+      <Filter>nsStream\Buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="nsStream_Encoder.h">
+      <Filter>nsStream\Encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="nsStream_Encoder_XOR.h">
+      <Filter>nsStream\Encoder</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Update.txt" />
+  </ItemGroup>
+</Project>
